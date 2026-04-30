@@ -57,7 +57,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach(element => revealObserver.observe(element));
 
 const typeTarget = document.querySelector('#type-text');
-const typeWords = ['Cybersécurité', 'Réseaux', 'Sécurité Informatique', 'Linux & Docker'];
+const typeWords = ['Cybersécurité', 'Réseaux', 'Sécurité Informatique'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

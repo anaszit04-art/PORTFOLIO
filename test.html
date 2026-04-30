@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Anas Zitouni - Cybersécurité, réseaux, Linux, Docker, supervision et détection de menaces.">
+    <meta name="keywords" content="Anas Zitouni, Cybersécurité, Réseaux, ENSA Fès, Linux, Docker, Kubernetes, ELK, Honeypot SSH, Malware Detection">
+    <meta name="author" content="Anas Zitouni">
+    <title>Anas Zitouni | Portfolio Cybersécurité</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="#home" class="logo">ANAS<span>.</span></a>
+
+        <button class="menu-btn" id="menu-icon" aria-label="Ouvrir le menu">
+            <i class='bx bx-menu'></i>
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#about">Profil</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experience">Expériences</a>
+            <a href="#education">Parcours</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home section" id="home">
+            <div class="home-grid">
+                <div class="home-content reveal">
+                    <p class="eyebrow">Portfolio IT & Cybersécurité</p>
+                    <h1>ANAS ZITOUNI</h1>
+                    <h2>A la recherche d'un stage de 2 mois en <span id="type-text">Cybersécurité</span></h2>
+                    <p class="home-description">
+                        Étudiant en informatique à l'ENSA Fès, orienté cybersécurité, réseaux et sécurité informatique. Je travaille sur des projets concrets liés à la détection de menaces, la sécurité des conteneurs, la supervision réseau et l’analyse d’environnements Linux.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">Voir mes projets</a>
+                        <a href="#contact" class="btn secondary">Me contacter</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/anaszit04-art" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/anas-zitouni-183b97251/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="mailto:anas.zitouni@usmba.ac.ma" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+
+                <div class="home-card reveal">
+                    <div class="profile-image-wrap">
+                        <img src="ME_PNG.png" alt="Photo de Anas Zitouni" class="profile-image">
+                    </div>
+                    <h3>Anas Zitouni</h3>
+                    <p>Étudiant en développement digital et cybersécurité</p>
+                    <ul class="quick-info">
+                        <li><i class='bx bx-map'></i> Fès, Maroc</li>
+                        <li><i class='bx bx-phone'></i> +212 637-781-471</li>
+                        <li><i class='bx bx-envelope'></i> anas.zitouni@usmba.ac.ma</li>
+                        <li><i class='bx bx-buildings'></i> ENSA Fès</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-title reveal">
+                <p>Profil</p>
+                <h2>À propos de moi</h2>
+            </div>
+
+            <div class="about-content reveal">
+                <p>
+                    Étudiant en informatique à l'ENSA Fès, je recherche un stage de 2 mois en cybersécurité ou réseaux. Je possède une expérience pratique en sécurité des conteneurs, supervision réseau et détection de menaces. Motivé, rigoureux et orienté projets, je souhaite contribuer à des problématiques concrètes de sécurité informatique.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <strong data-counter="4">0</strong>
+                        <span>Projets IT & cybersécurité</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong data-counter="8">0</strong>
+                        <span>Certifications</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong data-counter="3">0</strong>
+                        <span>Langues</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="section-title reveal">
+                <p>Réalisations</p>
+                <h2>Projets principaux</h2>
+            </div>
+
+            <div class="project-filter reveal">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="network">Réseaux</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card reveal" data-category="cyber">
+                    <div class="project-icon"><i class='bx bx-shield-quarter'></i></div>
+                    <span class="project-type">Projet personnel</span>
+                    <h3>Détecteur de malwares et analyseur des ressources</h3>
+                    <p>Outil de détection de logiciels malveillants et d’analyse des ressources système, orienté sécurité endpoint et identification de comportements suspects.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Endpoint Security</span><span>Analyse système</span>
+                    </div>
+                    <a href="https://github.com/anaszit04-art/Malware-detector-and-ressource-scanner" target="_blank" rel="noopener" class="project-link">GitHub - Détecteur de malwares <i class='bx bx-right-arrow-alt'></i></a>
+                </article>
+
+                <article class="project-card reveal" data-category="cyber devops">
+                    <div class="project-icon"><i class='bx bx-server'></i></div>
+                    <span class="project-type">Projet académique</span>
+                    <h3>Honeypot SSH avec AppArmor et ELK</h3>
+                    <p>Mise en place d’un honeypot SSH sécurisé avec confinement AppArmor et supervision via ELK pour observer et analyser les tentatives d’intrusion.</p>
+                    <div class="tags">
+                        <span>SSH</span><span>AppArmor</span><span>ELK</span><span>Linux</span>
+                    </div>
+                    <a href="https://github.com/anaszit04-art/Honeypot-SSH-avec-confinement-AppArmor-et-monitoring-ELKr" target="_blank" rel="noopener" class="project-link">GitHub - Honeypot SSH <i class='bx bx-right-arrow-alt'></i></a>
+                </article>
+
+                <article class="project-card reveal" data-category="cyber devops">
+                    <div class="project-icon"><i class='bx bxl-docker'></i></div>
+                    <span class="project-type">Projet académique</span>
+                    <h3>MISCONFIG MAYHEM</h3>
+                    <p>Identification et correction de mauvaises configurations dans un environnement Docker, avec focus sur le durcissement des conteneurs.</p>
+                    <div class="tags">
+                        <span>Docker</span><span>Container Security</span><span>Hardening</span>
+                    </div>
+                    <a href="https://github.com/anaszit04-art/MISCONFIG-MYHEM-Securing-a-containerized-application" target="_blank" rel="noopener" class="project-link">GitHub - MISCONFIG MAYHEM <i class='bx bx-right-arrow-alt'></i></a>
+                </article>
+
+                <article class="project-card reveal" data-category="network">
+                    <div class="project-icon"><i class='bx bx-network-chart'></i></div>
+                    <span class="project-type">Projet de stage</span>
+                    <h3>Supervision d’un réseau local</h3>
+                    <p>Application de supervision réseau avec détection d’équipements inconnus, suivi des machines connectées et amélioration de la visibilité réseau.</p>
+                    <div class="tags">
+                        <span>Réseaux</span><span>Monitoring</span><span>Détection</span>
+                    </div>
+                    <a href="https://github.com/anaszit04-art/Local-Network-Monitoring-and-Unknown-Devices-Detection-Application" target="_blank" rel="noopener" class="project-link">GitHub - Supervision réseau <i class='bx bx-right-arrow-alt'></i></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="section-title reveal">
+                <p>Compétences</p>
+                <h2>Stack technique</h2>
+            </div>
+
+            <div class="skills-layout">
+                <div class="skills-card reveal">
+                    <h3>Compétences techniques</h3>
+                    <div class="skill-tags">
+                        <span>AppArmor</span>
+                        <span>ELK</span>
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>SQL / PL-SQL</span>
+                        <span>Linux</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Git</span>
+                        <span>Bootstrap</span>
+                        <span>Django</span>
+                        <span>AWS Cloud</span>
+                    </div>
+
+                    <h3>Compétences supplementaires</h3>
+                    <div class="skill-tags">
+                        <span>Design</span>
+                        <span>Media management</span>
+                        <span>Conception Visuelles</span>
+                        <span>Photoshop</span>
+                    </div>
+                </div>
+
+                <div class="skills-card reveal">
+                    <h3>Niveaux et langues</h3>
+                    <div class="progress-list">
+                        <div class="progress-item"><div><span>Arabe</span><small>Natif</small></div><div class="progress-bar"><span data-width="100%"></span></div></div>
+                        <div class="progress-item"><div><span>Français</span><small>C1</small></div><div class="progress-bar"><span data-width="90%"></span></div></div>
+                        <div class="progress-item"><div><span>Anglais</span><small>C1</small></div><div class="progress-bar"><span data-width="90%"></span></div></div>
+                        <div class="progress-item"><div><span>Espagnole</span><small>C1</small></div><div class="progress-bar"><span data-width="60%"></span></div></div>
+                    </div>
+                    <h4>Soft skills</h4>
+                    <p>Travail en équipe, communication claire, raisonnement analytique, apprentissage continu, gestion du stress, intelligence émotionnelle et gestion du temps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section" id="experience">
+            <div class="section-title reveal">
+                <p>Expériences & certifications</p>
+                <h2>Parcours professionnel</h2>
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-column reveal">
+                    <h3>Expériences</h3>
+                    <div class="timeline-item">
+                        <span>11/25 - 05/26</span>
+                        <h4>Leader Sport - Chef d’équipe</h4>
+                        <strong>DECATHLON</strong>
+                        <p>Développement des compétences en leadership, gestion d’équipe, résolution de problèmes et travail sous pression.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span>07/25 - 08/25</span>
+                        <h4>Stagiaire IT</h4>
+                        <strong>ALTEN DELIVERY CENTER MAROC</strong>
+                        <p>Travail sur une application de supervision d’un réseau local avec détection d’équipements inconnus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-column reveal">
+                    <h3>Certifications</h3>
+                    <div class="cert-group">
+                        <h4>Cybersécurité</h4>
+                        <p>2026 - ISC2 Certified in Cybersecurity</p>
+                        <p>2026 - Ethical Hacker - Cisco</p>
+                        <p>2025 - Prompt Engineering, Ethical Hacking et IA générative</p>
+                    </div>
+                    <div class="cert-group">
+                        <h4>Cloud, Linux et outils</h4>
+                        <p>2025 - AWS Cloud Practitioner Essentials - AWS Training</p>
+                        <p>2025 - Linux Essentials - Simplilearn</p>
+                        <p>2025 - Git Training - Simplilearn</p>
+                    </div>
+                    <div class="cert-group">
+                        <h4>Bases de données</h4>
+                        <p>2024 - Oracle Database Certified Expert</p>
+                        <p>2024 - Oracle Database Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education section" id="education">
+            <div class="section-title reveal">
+                <p>Formation</p>
+                <h2>Parcours académique</h2>
+            </div>
+
+            <div class="education-cards">
+                <article class="edu-card reveal">
+                    <span>2024 - 2026</span>
+                    <h3>Développement digital et cybersécurité</h3>
+                    <p>École Nationale des Sciences Appliquées de Fès - ENSA FES</p>
+                </article>
+                <article class="edu-card reveal">
+                    <span>2022 - 2024</span>
+                    <h3>Cycle préparatoire</h3>
+                    <p>École Nationale des Sciences Appliquées de Fès - ENSA FES</p>
+                </article>
+                <article class="edu-card reveal">
+                    <span>2021 - 2022</span>
+                    <h3>Baccalauréat en sciences mathématiques</h3>
+                    <p>Lycée Bensouda - Fès, Maroc</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="section-title reveal">
+                <p>Contact</p>
+                <h2>Me contacter</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Discutons d'une opportunité</h3>
+                    <p>Je suis disponible pour un stage de 2 mois en cybersécurité, réseaux ou sécurité informatique.</p>
+                    <a href="mailto:anas.zitouni@usmba.ac.ma"><i class='bx bx-envelope'></i> anas.zitouni@usmba.ac.ma</a>
+                    <a href="tel:+212637781471"><i class='bx bx-phone'></i> +212 637-781-471</a>
+                    <a href="https://github.com/anaszit04-art" target="_blank" rel="noopener"><i class='bx bxl-github'></i> github.com/anaszit04-art</a>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/anas.zitouni@usmba.ac.ma" method="POST">
+                    <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio de Anas Zitouni">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="form-row">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary full">Envoyer le message</button>
+                    <p class="form-note" id="form-note">Le message sera envoyé vers anas.zitouni@usmba.ac.ma.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 - ANAS ZITOUNI. Tous droits réservés.</p>
+        <a href="#home" class="top-link" aria-label="Retour en haut"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
